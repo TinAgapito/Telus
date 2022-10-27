@@ -26,7 +26,6 @@ describe("Update the Contact Info and Location", () => {
     cy.get(`input[aria-label="Middle name (optional)"]`).clear().type("Mname");
     cy.get(`input[aria-label="Last name*"]`).clear().type("Lname");
     cy.get(`input[aria-label="Phone number"]`).clear().type("87654321");
-     
     cy.contains("Save").click();
     cy.contains("Save").should("be.disabled");
 
@@ -88,11 +87,13 @@ describe("Contact Info and Location Clean Up", () => {
   })
 })
 
-
-
-    //6. Add Primary and Other Languages.
-
-    // 7. Repeat step 2 and click the Sign Out button.
+// describe("Logout Successfully", () => {
+//   it("should logout from Telus Successfully", () => {
+//     cy.get(`[aria-label="User Avatar"]`).click();
+//     cy.contains("Sign Out").click();
+//     cy.url().should("include","cmp/logout");
+//   })
+// })
 
 
 
